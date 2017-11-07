@@ -5,7 +5,7 @@
     text-transform: uppercase;
     line-height: 24px;
     font-weight: bold;
-   /* outline: black solid 1px;*/
+  /*  outline: black solid 1px;*/
 }
 header{
     width: 100%;
@@ -19,13 +19,15 @@ main{
 footer{
     width: 100%;
     height: 190px;
-    margin: 50px 0 0 0;
     background: #333333;
 }
 footer p,
 a,
 h4{
     color: #ffffff;
+}
+p{
+    font-size: 14px;
 }
 .logo{
     float: left;
@@ -72,21 +74,16 @@ h4{
     padding: 0 0 50px 10px;
 }
 .breadcrumb>a{
+    text-decoration: none;
     color: #000000;
     margin: 0 40px 0 0;
 }
 .breadcrumb>a:nth-last-child(1){
     color: #999999;
 }
-.breadcrumb>a:nth-of-type(2)::before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    margin: 6px 0 0 -26px;
-    height: 20px;
-    background: url("../img/diamond.png") no-repeat;
-}
-.breadcrumb>a:nth-of-type(3)::before{
+.breadcrumb>a:nth-of-type(2)::before,
+.breadcrumb>a:nth-of-type(3)::before,
+.breadcrumb>a:nth-of-type(4)::before{
     content: '';
     position: absolute;
     width: 20px;
@@ -128,6 +125,9 @@ h4{
     float: right;
     width: 720px;
 }
+.catalog p:nth-of-type(1){
+    text-transform: none;
+}
 .content-wrap{
     display: inline-block;
     width: 220px;
@@ -137,47 +137,12 @@ h4{
 .content-wrap p{
     margin: 0 0 0 20px;
 }
-.image-one{
-    width: 220px;
-    height: 170px;
-    margin: 0 0 20px 0;
-    background: url("../img/image1.png")center no-repeat;
-}
-.image-two{
-    width: 220px;
-    height: 170px;
-    margin: 0 0 20px 0;
-    background: url("../img/image2.png")center no-repeat;
-}
-.image-tree{
-    width: 220px;
-    height: 170px;
-    margin: 0 0 20px 0;
-    background: url("../img/image3.png")center no-repeat;
-}
-.image-fo{
-    width: 220px;
-    height: 170px;
-    margin: 0 0 20px 0;
-    background: url("../img/image4.png")center no-repeat;
-}
-.image-five{
-    width: 220px;
-    height: 170px;
-    margin: 0 0 20px 0;
-    background: url("../img/image5.png")center no-repeat;
-}
-.image-six{
-    width: 220px;
-    height: 170px;
-    margin: 0 0 20px 0;
-    background: url("../img/image6.png")center no-repeat;
-}
+
 .price-wrap{
     display: inline-flex;
     width: 180px;
     height: 40px;
-    margin: 5px 0 15px 20px;
+    margin: 20px 0 15px 20px;
 }
 .price{
     padding: 8px 0 8px 0;
@@ -244,4 +209,92 @@ h4{
     display: inline-block;
     text-align: center;
     text-decoration: none;
+}
+.info-wrap{
+    width: 480px;
+}
+.info-wrap:nth-of-type(1){
+    display: flex;
+    justify-content: space-around;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+}
+.logo-set{
+    position: absolute;
+    width: 460px;
+    height: 500px;
+    background: url("../img/Set1.png") center no-repeat;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.18);
+}
+.logo-images{
+    width: 140px;
+    height: 150px;
+    margin: 520px 0 50px 0;
+}
+.logo-images:nth-of-type(2){
+    width: 140px;
+    height: 150px;
+    margin: 520px 0 50px 0;
+    background: url("../img/Set2.png") center no-repeat;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.18);
+}
+.logo-images:nth-of-type(3){
+    width: 140px;
+    height: 150px;
+    margin: 520px 0 50px 0;
+    background: url("../img/Set3.png") center no-repeat;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.18);
+}
+.logo-images:nth-of-type(4){
+    width: 140px;
+    height: 150px;
+    margin: 520px 0 50px 0;
+    background: url("../img/Set4.png") center no-repeat;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.18);
+}
+.information{
+     width: 390px;
+    margin: 0 0 0 75px;
+ }
+
+.information h2{
+    margin: 0 0 40px 0;
+}
+.price-wrap:nth-last-child(7) {
+    width: 180px;
+    height: 40px;
+    margin: 0 0 70px 0;
+}
+.information p:nth-of-type(1){
+    margin: 25px 0 0 0;
+}
+.information p:nth-of-type(2){
+    float: right;
+    margin: -25px 0 0 0;
+    color: #cccccc;
+}
+.information p:nth-of-type(3){
+    margin: 40px 0 40px 0;
+}
+.information>p:nth-of-type(4),
+.information>p:nth-of-type(5),
+.information>p:nth-of-type(6),
+.information>p:nth-of-type(7),
+.information>p:nth-of-type(8){
+    margin: 0 0 0 20px;
+}
+.information>p:nth-of-type(4)::before,
+.information>p:nth-of-type(5)::before,
+.information>p:nth-of-type(6)::before,
+.information>p:nth-of-type(7)::before,
+.information>p:nth-of-type(8)::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    margin: 6px 0 0 -17px;
+    height: 20px;
+    background: url("../img/diamond.png") no-repeat;
 }
