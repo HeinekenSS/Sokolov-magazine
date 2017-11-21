@@ -9,18 +9,19 @@
 <body>
 <header>
     <div class="head">
-        <a href="#" class="logo"></a>
+        <a href="index.html" class="logo"></a>
         <nav class="top-menu">
             <a href="#">Информация</a>
             <a href="#">Новости</a>
             <a href="#">Прайс-лист</a>
             <a href="#" class="border-shop">Магазин</a>
             <a href="#">Контакты</a>
-            <a href="#">Вход</a>
+            <a class="link" href="login.html">Вход</a>
         </nav>
     </div>
 </header>
 <main>
+<div class="item-main">
     <div class="main-wrap">
         <h2>Набор для путешествий «Baxter of California»</h2>
         <nav class="breadcrumb">
@@ -59,6 +60,24 @@
             </div>
         </div>
     </div>
+    <div class="modal">
+        <button class="close-modal"></button>
+        <div class="login">
+            <h2>Личный кабинет</h2>
+            <p>Введите пожалуйста свой логин и пароль</p>
+            <form class="form-login" action="#" method="get">
+                <input type="text" id="text4" name="login" placeholder="Логин">
+                <input type="text" id="text5" name="text" placeholder="Пароль">
+                <div class="check">
+                <input type="checkbox" class="checkbox" name="checkbox" id="ch1">
+                <label for="ch1">Запомни меня</label>
+                <a href="#">Я забыл пароль!</a>
+                </div>
+                <button class="btn-send">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
 </main>
 <footer>
     <div class="footer-wrap">
@@ -80,5 +99,6 @@
         </div>
     </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

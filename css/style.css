@@ -7,12 +7,19 @@
     font-weight: bold;
   /*  outline: black solid 1px;*/
 }
+time {
+     text-transform: lowercase;
+ }
 header{
     width: 100%;
     height: 70px;
     background: #000000;
 }
-main{
+.shop-main{
+    width: 100%;
+    height: 1050px;
+}
+.item-main{
     width: 100%;
     height: 915px;
 }
@@ -28,7 +35,35 @@ h4{
 }
 p{
     font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
 }
+nav{
+    padding: 20px 0 0 0;
+    font-size: 16px;
+}
+nav>a{
+    margin: 0 0 0 40px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.head-nav> a:nth-last-child(1){
+    margin: 0 0 0 330px;
+}
+.head-nav> a:nth-last-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    margin: 6px 0 0 -25px;
+    height: 20px;background: url("../img/login.png") no-repeat;
+}
+.barbershop-main{
+    width: 100%;
+    height: 1492px;
+    background: black url("../img/Background.png") center no-repeat;
+    background-size: cover;
+}
+
 .logo{
     float: left;
     width: 150px;
@@ -137,7 +172,6 @@ p{
 .content-wrap p{
     margin: 0 0 0 20px;
 }
-
 .price-wrap{
     display: inline-flex;
     width: 180px;
@@ -298,4 +332,241 @@ li::before{
     margin: 6px 0 0 -17px;
     height: 20px;
     background: url("../img/diamond.png") no-repeat;
+}
+
+
+
+
+.head{
+    width: 940px;
+    height: 70px;
+}
+.tittle-logo {
+    width: 940px;
+    height: 157px;
+    padding: 60px 0 80px 0;
+    background: url("../img/logo.png") center no-repeat;
+}
+.description{
+    width: 940px;
+    height: 160px;
+    color: #ffffff;
+}
+.content{
+    display: flex;
+    width: 940px;
+    height: 420px;
+    margin-top: 85px;
+    background: #ffffff;
+}
+.white-wrap{
+    width: 460px;
+    height: 420px;
+}
+.news-photo-wrap,
+.contact-wrap{
+    width: 380px;
+    height: 260px;
+    margin: 20px 0 0 80px;
+    font-weight: bold;
+}
+.news-photo-wrap p:nth-of-type(2){
+    margin: 30px 0 0 0;
+}
+.news-photo-wrap a{
+    text-decoration: none;
+    color: #000000;
+}
+.contact-wrap p:nth-of-type(2){
+    margin: 25px 0 0 0;
+}
+.white-wrap h2{
+    margin: 55px 0 0 80px;
+}
+.record{
+    width: 300px;
+    height: 200px;
+    margin: 20px 0 0 80px;
+    font-weight: bold;
+}
+.record p{
+    margin: 15px 0 0 0;
+}
+.form-record{
+    display: inline-block;
+    width: 140px;
+    height: 80px;
+    margin: 10px 8px 0 0;
+}
+#text1,
+#text2,
+#text3,
+#name{
+    width: 140px;
+    height: 40px;
+    border: 2px solid black;
+}
+.form-record > label{
+    display: block;
+    padding: 10px;
+}
+.decoration{
+    width: 15px;
+    height: 420px;
+    background: url("../img/decor.png") center no-repeat;
+}
+.photo{
+    float: left;
+    width: 300px;
+    height: 170px;
+    color: #ffffff;
+    background: url("../img/Photo.png") center no-repeat;
+}
+.contact{
+    display: flex;
+    width: 940px;
+    height: 420px;
+    margin-top: 36px;
+    background: #ffffff;
+}
+.triple-description{
+    float: left;
+    width: 290px;
+    height: 160px;
+    margin: 0 0 0 17px;
+    text-align: center;
+}
+.diamond{
+    width: 30px;
+    height: 30px;
+    margin-left: 50%;
+    margin-top: 20px;
+    background: #ffffff;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.info{
+    float: left;
+    width: 313px;
+    height: 100px;
+    margin: 50px 0 0 0;
+}
+.info:nth-child(2),
+.info:nth-child(3){
+    text-align: center;
+}
+.vk{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-top: 15px;
+    margin-right: 5px;
+    background: black url("../img/vk.png") center no-repeat;
+}
+.facebook{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-right: 5px;
+    background: black url("../img/facebook.png") center no-repeat;
+}
+.instagram{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background: black url("../img/instagram.png") center no-repeat;
+}
+.btn{
+    width: 140px;
+    height: 44px;
+    margin: 35px 20px 0 0;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    cursor: pointer;
+}
+.btn-send{
+    width: 300px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    background: #000000;
+    cursor: pointer;
+}
+.btn-one{
+    margin: 15px 20px 0 0;
+    color: #ffffff;
+    padding: 13px;
+    background: #000000;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-one:nth-last-child(1){;
+    margin: 15px 0 0 0;
+    color: white;
+    background: #000000;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.login{
+    width: 310px;
+    height: 280px;
+    padding: 20px;
+}
+.login p{
+    margin: 20px 0 0 0;
+    font-weight: bold;
+}
+.form-login > input{
+    width: 300px;
+    height: 40px;
+    border: 2px solid black;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+.form-login a{
+    color: black;
+}
+.check{
+    width: 305px;
+    height: 35px;
+    margin: 20px 0 0 0;
+}
+.check a {
+    float: right;
+}
+.close-modal{
+    width: 25px;
+    height: 25px;
+    margin: 10px 0 0 470px;
+    background: url("../img/close.png") center no-repeat;
+    border: none;
+    cursor: pointer;
+}
+input{
+    padding: 0 0 0 10px;
+}
+.button-wrap{
+    margin: 0 0 50px 0;
+}
+.modal{
+    position: fixed;
+    opacity: 0;
+    width: 460px;
+    height: 390px;
+    top: 50%;
+    left: 50%;
+    margin: -260px 0 0 -230px;
+    background: #ffffff;
+    transition: opacity .6s linear;
+ }
+.open{
+    opacity: 1;
+    visibility: visible;
 }

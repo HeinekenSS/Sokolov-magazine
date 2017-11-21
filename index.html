@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Барбершоп "Бородинский"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="head">
+        <nav class="head-nav">
+            <a href="#">Информация</a>
+            <a href="#">Новости</a>
+            <a href="#">Прайс-лист</a>
+            <a href="shop.html">Магазин</a>
+            <a href="#">Контакты</a>
+            <a class="link" href="login.html" >Вход</a>
+        </nav>
+    </div>
+</header>
+<main class="barbershop-main">
+    <div class="tittle-logo"></div>
+    <div class="description">
+        <div class="triple-description">
+            <h2>Быстро</h2>
+            <div class="diamond"></div>
+            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+        </div>
+        <div class="triple-description">
+            <h2>Круто</h2>
+            <div class="diamond"></div>
+            <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне</p>
+        </div>
+        <div class="triple-description">
+            <h2>Дорого</h2>
+            <div class="diamond"></div>
+            <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="white-wrap">
+            <h2>Новости</h2>
+            <div class="news-photo-wrap">
+                <a href="#">
+                    <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки </p>
+                    <time>11 января</time>
+                    <p>В нашей команде поподнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды </p>
+                    <time>18 января <br></time>
+                </a>
+                <a href="#" class="btn-one">Все новости</a>
+            </div>
+        </div>
+        <div class="decoration"></div>
+        <div class="white-wrap">
+            <h2>Фотогалерея</h2>
+            <div class="news-photo-wrap">
+                <div class="photo"></div>
+                <button class="btn">Назад</button>
+                <button class="btn">Вперед</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="white-wrap">
+            <h2>Контактная информация <br></h2>
+            <div class="contact-wrap">
+                <p>Барбершоп "Бородинский" <br>
+                    Адрес:г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8 <br>
+                    Телефон:+7(495)666-02-66</p>
+                <p>Время работы: <br>
+                    Пн-пт: с 10:00 до 22:00 <br>
+                    Сб-вс: с 10:00 до 19:00</p>
+                <a href="#" class="btn-one">Как проехать</a>
+                <a href="#" class="btn-one">Обратная связь</a>
+            </div>
+        </div>
+        <div class="decoration"></div>
+        <div class="white-wrap">
+            <div class="record">
+                <h2>Записаться</h2>
+                <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                <form action="#" method="post">
+                    <div class="form-record">
+                        <label for="text1">Дата</label>
+                        <input type="text" id="text1" name="text" placeholder="8.10.2017">
+                    </div>
+                    <div class="form-record">
+                        <label for="text2">Время</label>
+                        <input type="text" id="text2" name="text" placeholder="10:00">
+                    </div>
+                    <div class="form-record">
+                        <label for="name">Ваше имя</label>
+                        <input type="name" id="name" name="name" placeholder="Борода">
+                    </div>
+                    <div class="form-record">
+                        <label for="text3">Телефон</label>
+                        <input type="text" id="text3" name="text" placeholder="+7 123 456-78-90">
+                    </div>
+                    <button type="submit" class="btn-send">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="modal">
+            <button class="close-modal"></button>
+            <div class="login">
+                <h2>Личный кабинет</h2>
+                <p>Введите пожалуйста свой логин и пароль</p>
+                <form class="form-login" action="#" method="get">
+                    <input type="text" id="text4" name="login" placeholder="Логин" required>
+                    <input type="password" id="password" name="password" placeholder="Пароль" required>
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="ch1">
+                    <label for="ch1">Запомни меня</label>
+                    <a href="#">Я забыл пароль!</a>
+                    </div>
+                    <button class="btn-send">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-wrap">
+        <div class="info">
+            <p>Барбершоп"Бородинский" <br>
+                Адрес:г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8 <br>
+                <a href="#">Как нас найти? <br></a>
+                Телефон:+7(495)666-02-66</p>
+        </div>
+        <div class="info">
+            <h4>Давайте дружить!</h4>
+            <a href="#" class="vk"></a>
+            <a href="#" class="facebook"></a>
+            <a href="#" class="instagram"></a>
+        </div>
+        <div class="info">
+            <h4>Разработано:</h4>
+            <a href="#" class="btn-one">Html academy</a>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
